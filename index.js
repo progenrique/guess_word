@@ -5,6 +5,8 @@ const $containerLettersForm = document.querySelector(".container_letters");
 const $fragment = document.createDocumentFragment();
 const $inputTries = document.querySelectorAll(".input_radio");
 const $misTakes = document.querySelector(".mistakes");
+const $clue = document.getElementById("clue");
+const $containerClue = document.querySelector(".clue");
 
 async function getData() {
   try {
@@ -47,12 +49,13 @@ async function gueessWord() {
 
     document.addEventListener("keyup", (e) => {
       if (e.target.matches(".input_letters")) {
-        if (e.target.nextElementSibling) e.target.nextElementSibling.focus();
         if (e.target.value) {
           const id = e.target.id;
-          const value = e.target.value;
+          const value = e.target.value.toLowerCase();
 
           if (wordArray[id] === value) {
+            if (e.target.nextElementSibling)
+              e.target.nextElementSibling.focus();
             answerWord[id] = value;
             const answerWordstring = answerWord.join("");
             if (word === answerWordstring) {
@@ -64,7 +67,14 @@ async function gueessWord() {
             if (i < $inputTries.length) {
               $inputTries[i].checked = true;
               i++;
-
+              if (i === 2) {
+                $containerClue.classList.remove("none");
+                $clue.innerHTML = wordArray[0] + wordArray[1];
+              }
+              if (i === 4) {
+                $clue.innerHTML =
+                  wordArray[0] + wordArray[1] + wordArray[2] + wordArray[3];
+              }
               wordArray.forEach((el) => {
                 if (value === el) {
                   variableContrlMisTakes = true;

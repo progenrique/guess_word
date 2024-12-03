@@ -7,12 +7,12 @@ el boton reset te reinicia los intentos y el boton aleatorio te cambia a otra pa
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap (opcional)
 
 ## Funcionalidades
 - [x] Página responsiva
-- [x] Animaciones con CSS
+- [x] peticion fetch para obtener la palabra aleatoriamente
 - [x] Interacción mediante JavaScript
+- [X] Se crean las casillas dinamicamente dependiendo la palabra mostrada 
 
 ## Captura de Pantalla
 ![Captura del proyecto](ruta/a/tu/captura.png)

@@ -15,7 +15,7 @@ el boton reset te reinicia los intentos y el boton aleatorio te cambia a otra pa
 - [X] Se crean las casillas dinamicamente dependiendo la palabra mostrada 
 
 ## Captura de Pantalla
-![Captura del proyecto](ruta/a/tu/captura.png)
+![Captura del proyecto](asets.captura.png)
 
 ## Instalación
 1. Clona el repositorio:

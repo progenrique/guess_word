@@ -17,5 +17,5 @@ el boton reset te reinicia los intentos y el boton aleatorio te cambia a otra pa
 ## Captura de Pantalla
 ![Captura del proyecto](assets/captura.png)
 
-## link 
+## link en Vercel
 [Gues-Word](https://guess-word-github-io.vercel.app/ "Title")

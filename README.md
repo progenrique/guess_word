@@ -15,9 +15,7 @@ el boton reset te reinicia los intentos y el boton aleatorio te cambia a otra pa
 - [X] Se crean las casillas dinamicamente dependiendo la palabra mostrada 
 
 ## Captura de Pantalla
-![Captura del proyecto](assets.captura.png)
+![Captura del proyecto](assets/captura.png)
 
-## Instalación
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/tu-usuario/nombre-del-repo.git
+## link 
+[Gues-Word](https://guess-word-github-io.vercel.app/ "Title")
